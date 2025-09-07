@@ -1,10 +1,8 @@
 const targetList = new Set([
   "acorn",
   "babel",
-  "babel-minify",
   "babylon",
   "buble",
-  "chai",
   "coffeescript",
   "espree",
   "esprima",

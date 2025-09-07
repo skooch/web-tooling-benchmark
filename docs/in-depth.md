@@ -38,12 +38,6 @@ Note that this explicitly excludes the [Babylon](https://github.com/babel/babylo
 and only measures the throughput of the actual transformations. The parser is tested
 separately by the `babylon` benchmark below.
 
-## babel-minify
-
-[Babel Minify](https://github.com/babel/minify) is an ES2015+ aware minifier based on the Babel toolchain. It is written as a set of Babel plugins.
-
-This benchmark stresses the babel minifier on the (concatenated) JavaScript source for the ES2015 test in the [Speedometer](https://browserbench.org/Speedometer) 2.0 benchmark.
-
 ## babylon
 
 [Babylon](https://github.com/babel/babylon) is the frontend for the Babel transpiler and
@@ -67,20 +61,6 @@ ES2015 compiler, both the parser and the actual transformation
 logic, on the same 196K ES2015 module containing the untranspiled
 [Vue](https://github.com/vuejs/vue) source code that is also used
 to stress by the `babel` and `babylon` tests.
-
-## chai
-
-[Chai](http://chaijs.com) is a popular BDD / TDD assertion library for
-[Node](https://www.nodejs.org) and the browser that can be delightfully
-paired with any test driver framework for JavaScript. It is commonly used
-to write unit and integration tests. As such this test is not just a good
-benchmark for web tooling on the [Node](https://www.nodejs.org) side, but
-is also very relevant to the browser as tests often need to be run in the
-browser too.
-
-This benchmark is based on the test suite that comes with Chai and
-essentially uses the Chai BDD style interface to test the Chai library
-itself.
 
 ## coffeescript
 
